@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #;
+}
+
+header {
+    background-color: #4B0082;
+    padding: 10px;
+
+}
+
+.logo-jogo {
+    height: 15px;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header-nav {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 12px;
+    text-align: center;
+    display: ;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            padding: 10px;
+
+            a {
+                font-weight: bolder;
+                text-decoration: none;
+                color: #E6E6FA;
+                text-transform: uppercase;
+
+            }
+        }
+    }
+}
+
+.banner-desktop {
+    display: none;
+}
+
+.banner-mobile {
+    margin: auto;
+}
+
+@media (min-width: 500px) {
+    .header {
+        .header-menu {
+            display: none;
+        }
+
+        .header-nav {
+            float: right;
+            display: block;
+            border: 0;
+            
+            ul {
+                padding: 20px;
+                li {
+                    display:inline-block;
+                    border: 0;
+                    a {
+                    
+                    }
+                    a:hover {
+                        color:#AFEEEE ;
+                        border-bottom: 2px solid ;
+                       
+                    }    
+                    
+                }
+            }
+        }
+    }
+    .banner-mobile {
+        display: none;
+    }
+}
