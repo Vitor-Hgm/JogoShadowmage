@@ -4,55 +4,87 @@
 }
 
 body {
-    background-color: #;
-}
-
-header {
-    background-color: #4B0082;
-    padding: 10px;
-
-}
-
-.logo-jogo {
-    height: 15px;
-
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 15px;
 }
 
 .container {
-    width: 80%;
+    width:80%;
     margin: auto;
 }
 
+.header {
+    background-color: #4F4F4F;
+    .header-logo {
+        img {
+            height: 70px;
+        }
+    }
+
+}
+
+.header-menu {
+    border: 2px solid #7e64db;
+    color: #a59abc;
+    float: right;
+    font-size: 2em;
+    padding: 10px;
+    margin: 15px;
+}
+
 .header-nav {
-    border: 2px solid black;
-    padding: 15px;
-    margin: 12px;
+    border: 2px solid rgb(136, 115, 213);
+    margin: 15px;
+    padding: 8px;
     text-align: center;
-    display: ;
-
+    display: none;
     ul {
-        list-style-type: none;
-
+        list-style: none;
         li {
             padding: 10px;
-
             a {
-                font-weight: bolder;
-                text-decoration: none;
-                color: #E6E6FA;
                 text-transform: uppercase;
-
+                color: azure;
+                text-decoration: none;
+                font-weight: bold;
             }
         }
     }
 }
 
-.banner-desktop {
+
+
+.banner-mobile {
+    background-color: #4F4F4F;
+    text-align: center;
+    padding-bottom: 40px;
+    img {
+        width: 100%;
+    }
+}
+
+.banner-pc {
     display: none;
 }
 
-.banner-mobile {
-    margin: auto;
+.footer {
+    text-align: center;
+    background-color: #4F4F4F;
+    color: #FFFAFA;
+    padding: 20px;
+    p {
+        margin: 10px;
+    }
+    a {
+        color: #FFFAFA;
+        text-decoration: none;
+        margin: 20px;
+        font-size: 1.8em;
+    }
+    a:hover {
+        color: #E0FFFF;
+    }
 }
 
 @media (min-width: 500px) {
@@ -60,31 +92,30 @@ header {
         .header-menu {
             display: none;
         }
-
         .header-nav {
-            float: right;
             display: block;
-            border: 0;
-            
-            ul {
-                padding: 20px;
+            border: 0px;
+            padding: 10px;
+            margin: 5px;
+            float: right;
+            ul {            
                 li {
-                    display:inline-block;
-                    border: 0;
+                    display: inline-block;
+                    margin: 5px;    
                     a {
-                    
+                        color: #F5F5F5;
+                        font-size: 1.2em;
+                        padding: 15px;
                     }
                     a:hover {
-                        color:#AFEEEE ;
-                        border-bottom: 2px solid ;
-                       
-                    }    
-                    
+                        color: #6495ED;
+                        padding: 5px;
+                        border: 1px solid #9ac5e0;
+                        border-radius: 2px; 
+                    }              
                 }
             }
         }
-    }
-    .banner-mobile {
-        display: none;
+
     }
 }

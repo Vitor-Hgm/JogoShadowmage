@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Jogo Shadow Mage</title>
+
+    <link rel="shortcut" href="imagens/icone.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/aos.css">
@@ -21,7 +23,8 @@
             </a>
 
             <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars"></i> </a>
+
 
                 <nav class="header-nav">
                     <ul>
@@ -47,7 +50,7 @@
                         </li>
                         <li>
                             <a href="jogar.html" title="Jogar" class="btn-jogar">
-                                Jogar
+                                jogar
                             </a>
                         </li>
                     </ul>
@@ -57,22 +60,43 @@
     </header>
 
     <section class="banner-mobile">
-        <img src="imagens/banner-jogo.png" alt="">
-
-
-
-
+        <img src="imagens/banner-mobile.png"">
         
+
     </section>
+
+    <section class=" banner-pc">
+        <div class="container">
+            <div class="flex">
+                <div class="col">
+
+                    <img src="imagens/banner.png" alt="Banner Pc" title="banner Pc">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="container">
+            <div class="mcs">
+                <h1>Personagens</h1>
+                <p>
+                    <img src="" alt="Personagem Cian" title="Personagem Cian">
+                </p>
+
+            </div>
+        </section>
+    </main>
 
 
 
 
     <footer class="footer">
         <div class="container">
-            <p>
-                <img src="" alt="Logo jogo ">
-            </p>
+
+            <img src="imagens/icone.ico" alt="Logo jogo">
+
             <p>
                 Desenvolvido por Vitor Hugo - Todos Direitos Reservados
             </p>
@@ -81,8 +105,7 @@
                 <a href="" title="Facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
-            </p>
-            <p>
+
                 <a href="" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
@@ -91,7 +114,7 @@
 
     </footer>
 
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/aos.js"></script>
     <script>
         function mostrarMenu() {
