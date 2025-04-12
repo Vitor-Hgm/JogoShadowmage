@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre o Jogo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Contato - Shadow Mage</title>
+
+    <link rel="shortcut icon" href="imagens/icone.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <a href="index.html" title="Home" class="logo-jogo">
+                <img src="imagens/shadow_mage_logo_200x100.png" alt="Logo Jogo" class="banner-logo">
+            </a>
+
+            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html" title="HOME">Home</a></li>
+                    <li><a href="sobre.html" title="Sobre">Sobre</a></li>
+                    <li><a href="galeria.html" title="Galeria de Fotos">Galeria</a></li>
+                    <li><a href="contato.html" title="Contato">Contato</a></li>
+                    <li><a href="jogar.html" title="Jogar" class="btn-jogar">Jogar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="sobre-container">
+            <h2>Sobre o Jogo</h2>
+            <br>
+            <p>Shadow Mage é um jogo Plataforma de ação e aventura,<br> onde você assume o papel de um poderoso mago que
+                tem o objetivo <br> de salvar a princesa sequestrada pelo grande inimigo do reino, o Rei Demonio.</p>
+            <p>Era uma noite sem lua no pacífico Reino de Spade. As estrelas estavam ocultas pelas nuvens negras que <br>
+                surgiram repentinamente no céu. No coração do reino, o Rei Lucius e sua filha, a Princesa , <br> celebravam o
+                Festival da Luz — um evento que simbolizava a vitória do bem sobre as trevas.</p>
+            <P>Mas naquela noite... a luz não brilhou. <br>
+                Das sombras emergiu um antigo inimigo esquecido nas lendas: Lord , o Rei Demônio, senhor das <br>
+                trevas e mestre da corrupção. Ele rasgou os céus com sua magia negra, invadiu o castelo e sequestrou a <br>
+                princesa , levando-a para seu castelo sombrio nas profundezas das Montanhas Malditas.</P>
+            <p>Para salva la o convocou o mago mais forte do reino e lhe deu a missao de salvar a princesa. <br> O mago vai
+                precisar passar pela floresta negra cheia de lacaios para entrar na dungeon do rei demonio e assim resgatar a princesa .</p>
+                <hr>
+        </section>
+
+        <Section class="sobre-container">
+            <h2>Criaçao</h2>
+            <p>
+                O jogo foi criado na plantaforma construct 3, no qual o desenvolvedor tem a liberdade de criar jogos 2D/3D <br>  utilizando o conceito Low Code, onde é possivel criar jogos de forma simples, <br> rapida e intuitiva, sem a necessidade de usar linguagens de programação complexas.
+            </p>
+        </Section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <img src="imagens/icone.ico" alt="Logo jogo">
+            <p>Desenvolvido por Vitor Hugo - Todos Direitos Reservados</p>
+            <hr>
+            <p>
+                <a href="#" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function mostrarMenu() {
+            $(".header-nav").toggle();
+        }
+
+        AOS.init();
+    </script>
 </body>
+
 </html>
