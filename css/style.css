@@ -14,7 +14,6 @@ body {
 .container {
     width: 90%;
     margin: auto;
-    
 }
 
 .header {
@@ -26,7 +25,7 @@ body {
 }
 
 .header-menu {
-    color: #f3e8dc;
+    color: #dcf3f1;
     float: right;
     font-size: 2em;
     padding: 10px;
@@ -53,7 +52,7 @@ body {
 
 .header-nav ul li a {
     text-transform: uppercase;
-    color: #f3e8dc;
+    color: #a1c2fc;
     text-decoration: none;
     font-weight: bold;
 }
@@ -62,11 +61,14 @@ body {
     text-align: center;
     padding-bottom: 40px;
     display: block;
-    img {
-        width: 100%;
-    }
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
+.banner-mobile img {
+    width: 100%;
+    height: auto;
+
+}
 
 main {
     background-color: #0f1720;
@@ -85,7 +87,7 @@ main p {
     margin-bottom: 30px;
 }
 
-.banner-pc{
+.banner-desktop {
     display: none;
 }
 
@@ -122,7 +124,7 @@ main p {
     padding: 12px;
     border: none;
     border-radius: 4px;
-    background-color:  #1c2c3a;
+    background-color: #1c2c3a;
     color: #dcf0f3;
     font-size: 1em;
     cursor: pointer;
@@ -155,10 +157,11 @@ main p {
 }
 
 .footer a:hover {
-    color: #ffce85;
+    color: #5ec1e8;
 }
 
 h2 {
+    color: #01f7ff;
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 10px;
@@ -166,41 +169,39 @@ h2 {
 
 .sobre-container {
     background-color: #1a1a1a;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    margin-bottom: 40px;
+    margin: 20px auto;
     border-left: 5px solid #7f5af0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), 0 0 8px rgba(127, 90, 240, 0.2);
+    transition: box-shadow 0.3s ease;
+    width: 95%;
+    max-width: 900px;
 }
-
 
 .sobre-container h2 {
     color: #7f5af0;
-    font-size: 28px;
+    font-size: 1.8em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
+.sobre-container h3 {
+        color: #978db5;
+        font-size: 1.4em;
+}
 
 .sobre-container p {
-    font-size: 16px;
+    font-size: 1em;
     margin-bottom: 16px;
+    line-height: 1.6;
+    text-align: justify;
 }
-
 
 hr {
     border: none;
     border-top: 1px solid #444;
     margin-top: 20px;
-}
-
-
-.sobre-container P {
-    text-transform: none;
-}
-
-    
-    
-    
 }
 
 @media (min-width: 780px) {
@@ -234,7 +235,21 @@ hr {
     }
 
     .banner-mobile {
-        display: 
+        display: none;
+    }
+
+    .banner-desktop {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 25px auto;
+        width: 90%;
+        box-shadow: 0 0 40px rgba(179, 92, 203, 0.422);
+    }
+
+    .banner-desktop img {
+        width: 100%;
+        height: auto;
     }
 
     .sobre-container {
@@ -247,5 +262,9 @@ hr {
 
     .sobre-container p {
         font-size: 15px;
+    }
+
+    .sobre-container h3 {
+
     }
 }

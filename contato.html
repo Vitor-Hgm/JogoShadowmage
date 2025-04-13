@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -43,22 +43,23 @@
     </header>
 
     <main class="main">
-        <section class="container">
-            <h1>Entre em Contato</h1>
-            <p>Tem dúvidas, sugestões ou encontrou algum bug? Envie sua mensagem abaixo:</p>
-            <form action="#" method="post" class="form-contato">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+        <section class="form-contato">
+            <h2>Entre em contato</h2>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
 
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="botao">Enviar</button>
             </form>
         </section>
+
     </main>
     <footer class="footer">
         <div class="container">
@@ -66,13 +67,17 @@
             <p>Desenvolvido por Vitor Hugo - Todos Direitos Reservados</p>
             <hr>
             <p>
-                <a href="#" title="Facebook">
+                <a href="https://www.facebook.com/vitorhugo.demoraes.98/" title="Facebook" target=”_blank”>
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="#" title="Instagram">
+                <a href="https://www.instagram.com/hugodmoraes/" title="Instagram" target=”_blank”>
                     <i class="fab fa-instagram"></i>
                 </a>
+                <a href="https:/wa.me/5544997356247" title="Whatsapp" target=”_blank”>
+                    <i class="fab fa-whatsapp"></i>
+                </a>
             </p>
+
         </div>
     </footer>
 
@@ -84,6 +89,34 @@
         }
 
         AOS.init();
+    </script>
+
+    <script>
+        document.getElementyById('botao').onclick = function () {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var mensagem = document.getElementById('mensagem').value;
+
+            if (nome == "" && email == "" && mensagem == "") {
+                alert('Por favor, preencha todos os campos.');
+
+            } else {
+                if (nome == "") {
+                    alert('Informe o seu nome');
+                }
+                if (email == "") {
+                    alert('Informe o seu email');
+                }
+                if (mensagem == "") {
+                    alert('Informe a sua mensagem');
+                }
+            }
+
+            if (nome != "" && email != "" && mensagem != "") {
+                alert('Mensagem enviada com sucesso!');
+            }
+
+        };
     </script>
 </body>
 
