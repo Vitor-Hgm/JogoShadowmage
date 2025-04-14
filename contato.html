@@ -46,18 +46,20 @@
         <section class="form-contato">
             <h2>Entre em contato</h2>
 
-            <form action="#" method="post">
+            <form id="form-contato" action="#" method="post">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-
+            
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-
+            
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
-
-                <button type="submit" class="botao">Enviar</button>
+            
+                <button type="submit" class="botao" id="botao">Enviar</button>
+                <div id="mensagem-status"></div>
             </form>
+            
         </section>
 
     </main>
@@ -91,33 +93,26 @@
         AOS.init();
     </script>
 
-    <script>
-        document.getElementyById('botao').onclick = function () {
-            var nome = document.getElementById('nome').value;
-            var email = document.getElementById('email').value;
-            var mensagem = document.getElementById('mensagem').value;
+<script>
+    document.getElementById('form-contato').addEventListener('submit', function (event) {
+        event.preventDefault();
 
-            if (nome == "" && email == "" && mensagem == "") {
-                alert('Por favor, preencha todos os campos.');
+        var nome = document.getElementById('nome').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var mensagem = document.getElementById('mensagem').value.trim();
+        var status = document.getElementById('mensagem-status');
 
-            } else {
-                if (nome == "") {
-                    alert('Informe o seu nome');
-                }
-                if (email == "") {
-                    alert('Informe o seu email');
-                }
-                if (mensagem == "") {
-                    alert('Informe a sua mensagem');
-                }
-            }
+        if (nome === '' || email === '' || mensagem === '') {
+            status.innerText = 'Preencha todos os campos obrigatórios.';
+            status.style.color = 'red';
+        } else {
+            status.innerText = 'Mensagem enviada com sucesso!';
+            status.style.color = 'white';
 
-            if (nome != "" && email != "" && mensagem != "") {
-                alert('Mensagem enviada com sucesso!');
-            }
+        }
+    });
+</script>
 
-        };
-    </script>
 </body>
 
 </html>
