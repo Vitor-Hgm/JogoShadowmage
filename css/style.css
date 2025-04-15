@@ -12,7 +12,7 @@ body {
     font-family: 'PT Serif', serif;
     color: #f3e8dc;
     font-size: 15px;
-    background-image: url(../imagens/fundo.png);
+    background-image: url(../imagens/fundo2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body {
 }
 
 .header {
-    background-color: #2e3f50;
+    background-color: #1c2c3a;
     padding: 10px 0;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .header-menu {
-    color: #dcf3f1;
+    color: #dcf0f3;
     float: right;
     font-size: 2em;
     padding: 10px;
@@ -43,12 +43,12 @@ body {
 }
 
 .header-nav {
-    border: 2px solid #26383f;
+    border: 2px solid #0f1720;
     margin: 10px 0;
     padding: 8px;
     text-align: center;
     display: none;
-    background-color: #2e3f50;
+    background-color: #1c2c3a;
 }
 
 .header-nav ul {
@@ -61,7 +61,7 @@ body {
 
 .header-nav ul li a {
     text-transform: uppercase;
-    color: #a1c2fc;
+    color: #85fbff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -99,7 +99,7 @@ main p {
 }
 
 .form-contato {
-    background-color: #2e3f50;
+    background-color: #1c2c3a;
     padding: 30px;
     border-radius: 8px;
     width: 100%;
@@ -121,7 +121,7 @@ main p {
     margin-top: 5px;
     background-color: #0f1720;
     border: 1px solid #3f2b26;
-    color: #dcecf3;
+    color: #dcf0f3;
     border-radius: 4px;
 }
 
@@ -139,13 +139,13 @@ main p {
 }
 
 .form-contato button:hover {
-    background-color: #367a75;
+    background-color: #85fbff;
     color: #0f1720;
 }
 
 .footer {
     text-align: center;
-    background-color: #2e3f50;
+    background-color: #1c2c3a;
     color: #f3e8dc;
     padding: 20px;
     border-top: 2px solid #3f2b26;
@@ -161,30 +161,30 @@ main p {
 }
 
 .footer a:hover {
-    color: #5ec1e8;
+    color: #85fbff;
 }
 
 .sobre-container {
-    background-color: #1a1a1a;
+    background-color: #0f1720;
     padding: 15px;
     border-radius: 12px;
     margin: 50px auto;
-    border-left: 5px solid #7f5af0;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), 0 0 8px rgba(127, 90, 240, 0.2);
+    border-left: 5px solid #85fbff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), 0 0 8px rgba(133, 251, 255, 0.2);
     transition: box-shadow 0.3s ease;
     width: 95%;
     max-width: 900px;
 }
 
 .sobre-container h2 {
-    color: #7f5af0;
+    color: #85fbff;
     font-size: 1.8em;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .sobre-container h3 {
-    color: #978db5;
+    color: #dcf0f3;
     font-size: 1.4em;
 }
 
@@ -244,7 +244,7 @@ main p {
 
 .galeria h2 {
     font-size: 2em;
-    color: #a0ebed;
+    color: #85fbff;
     text-align: center;
     margin-bottom: 30px;
     font-family: 'PT Serif', serif;
@@ -255,12 +255,13 @@ main p {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    p {
-        color: #f3e8dc;
-        font-size: 1.2em;
-        text-align: center;
-        margin: 10px;
-    }
+}
+
+.galeria .col p {
+    color: #f3e8dc;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px;
 }
 
 .galeria .col img {
@@ -275,7 +276,6 @@ main p {
 .galeria .col img:hover {
     transform: scale(1.05);
 }
-
 
 @media (min-width: 780px) {
     .header-menu {
@@ -295,15 +295,15 @@ main p {
     }
 
     .header-nav ul li a {
-        color: #dcdcf3;
+        color: #dcf0f3;
         font-size: 1em;
         padding: 10px;
         transition: color 0.3s, background-color 0.3s;
     }
 
     .header-nav ul li a:hover {
-        color: #85e1ff;
-        background-color: #141d28;
+        color: #85fbff;
+        background-color: #0f1720;
         border-radius: 4px;
     }
 
@@ -321,7 +321,6 @@ main p {
 
     .galeria h2 {
         font-size: 1.6em;
-        
     }
 
     .galeria .col {
@@ -334,11 +333,10 @@ main p {
     .galeria .col img {
         max-width: 100%;
     }
-
 }
 
 h2 {
-    color: #a0ebed;
+    color: #85fbff;
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 10px;
@@ -346,6 +344,6 @@ h2 {
 
 hr {
     border: none;
-    border-top: 1px solid #444;
+    border-top: 1px solid #3f2b26;
     margin-top: 20px;
 }
