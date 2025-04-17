@@ -18,6 +18,11 @@ body {
     background-repeat: no-repeat;
 }
 
+
+.jogar-container {
+    text-align: center;
+    margin: 20px;
+}
 .btn-sobre {
     display: inline-block;
     text-align: center;
@@ -28,8 +33,7 @@ body {
     font-weight: bold;
     font-size: 1em;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    
 }
 
 
@@ -365,7 +369,7 @@ main p {
     .sites {
         display: blocl;
         text-align: center;
-        
+        font-size: 1.5em;
         
     }
 
