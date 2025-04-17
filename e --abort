@@ -1,0 +1,41 @@
+[33mcommit 4f9de33eb0030fec5ae8dc876fc299a791bfd345[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Vitor Hugo <mvitorhugo862@gmail.com>
+Date:   Wed Apr 16 17:00:32 2025 -0300
+
+    Crie botoes e escrevi um texto  na pagina principal, e
+
+[33mcommit cd487f24d40be6fcdb5403af6a7dadd80efaafde[m
+Author: Vitor Hugo <mvitorhugo862@gmail.com>
+Date:   Tue Apr 15 11:09:43 2025 -0300
+
+    Mudei a paleta de cores a deixando mais escura e troquei a imagem de fundo
+
+[33mcommit a5383b013f7d536aab74b74439000f9d72757c46[m
+Author: Vitor Hugo <mvitorhugo862@gmail.com>
+Date:   Mon Apr 14 15:36:09 2025 -0300
+
+    Mudei o JavaScript colocando uma nova funcionalidade, criei a pagina da galeria, adicionei as imagens e coloquei o css.
+
+[33mcommit 28a30976a2ac5a4be4c50c7d3bcdd0315935aad4[m
+Author: Vitor Hugo <mvitorhugo862@gmail.com>
+Date:   Sun Apr 13 01:05:09 2025 -0300
+
+    Mudei alguns elementos na pagina sobre, como a estilizaçao e crie novos paragrafos. Criei o JavaScript para o formulário da página de contatos e adicionei os links para redes sociais
+
+[33mcommit d123f62c075ad535e4276b8ad487f05a40f45f96[m
+Author: Vitor Hugo <mvitorhugo862@gmail.com>
+Date:   Fri Apr 11 23:42:10 2025 -0300
+
+    Adicionei as paginas de contato, sobre e mudei as paletas de cores do site
+
+[33mcommit e343fc87a79db06f2f7f58ef23fd122c88728f2f[m
+Author: Vitor Hugo <mvitorhugo862@gmail.com>
+Date:   Fri Apr 11 15:39:28 2025 -0300
+
+    Adcionei uma pasta de icones, consortei bugs que estavam ocorrendo no menu e mudei as estilizaçao do site trocando as cores
+
+[33mcommit 16c9e520db28b20cff954a6861a2258ae2d98ba0[m
+Author: Vitor Hugo <mvitorhugo862@gmail.com>
+Date:   Tue Apr 8 15:31:08 2025 -0300
+
+    Primeiro Commit: crie uma parte do menu, adcionei logo e o banner mobile. Tambem criei o rodapé do site
