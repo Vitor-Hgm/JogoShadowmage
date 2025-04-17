@@ -294,7 +294,6 @@ main p {
 
 .sites {
     list-style: none;
-<<<<<<< HEAD
 }
 
 .sites li {
@@ -306,29 +305,6 @@ main p {
     text-decoration: none;
 }
 
-=======
-    padding: 0;
-    margin: 20px auto;
-    max-width: 660px;
-    text-align: left;
-}
-
-.sites li {
-    margin: 10px 0;
-}
-
-.sites a {
-    display: inline-block;
-    background-color: #1c2c3a;
-    color: #85fbff;
-    text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-
->>>>>>> 4f9de33 (Crie botoes e escrevi um texto  na pagina principal, e)
 @media (min-width: 780px) {
     .header-menu {
         display: none;
@@ -387,7 +363,6 @@ main p {
     }
 
     .sites {
-<<<<<<< HEAD
         display: blocl;
         text-align: center;
         
@@ -403,32 +378,6 @@ main p {
         color: rgb(82, 126, 228);
     }
 
-=======
-        max-width: 90%;
-    }
-
-    .sites a {
-        padding: 10px 15px;
-        font-size: 1.1em;
-    }
-
-    .btn-sobre {
-        display: block;
-        width: 20%;
-        max-width: 200px;
-        margin: auto;
-        font-size: 1, 2em;
-        padding: 12px 20px;
-    }
-
-    .btn-sobre:hover {
-        background-color: #85fbff;
-        color: #0f1720;
-        text-decoration: none;
-        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
->>>>>>> 4f9de33 (Crie botoes e escrevi um texto  na pagina principal, e)
 }
 
 h2 {
